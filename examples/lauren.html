@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html><head>
+		<title>Brain Model</title>
+        
+		<script src="../build/three.min.js"></script>
+        <script src="../build/TrackBallControls.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.checkable.js"></script> 
+        <script src="js/loaders/OBJLoader.js"></script>
+        
+        <link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div id="info_box"></div>
+    
+    	<div id="control_sidebar">
+
+            <h3>
+                <span class="title">Cortex</span>
+                <input type="checkbox" class="primary" checked />
+            </h3>
+            <ul id="cortex">
+                <li class="secondary">
+                    <h3>
+                        <span class="title">Left Cortex</span>
+                        <input type="checkbox" class="primary" checked />
+                    </h3>
+                    <ul id="L_Cortex">
+                        <li>
+                            <span class="title">Frontal Lobe</span>
+                            <input type="checkbox" class="L_Frontal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Temporal Lobe</span>
+                            <input type="checkbox" class="L_Temporal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Parietal Lobe</span>
+                            <input type="checkbox" class="L_Parietal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Occipital Lobe</span>
+                            <input type="checkbox" class="L_Occipital_Lobe" checked />
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="secondary">
+                    <h3>
+                        <span class="title">Right Cortex</span>
+                        <input type="checkbox" class="primary" checked />
+                    </h3>
+                    <ul id="R_Cortex">
+                        <li>
+                            <span class="title">Frontal Lobe</span>
+                            <input type="checkbox" class="R_Frontal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Temporal Lobe</span>
+                            <input type="checkbox" class="R_Temporal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Parietal Lobe</span>
+                            <input type="checkbox" class="R_Parietal_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Occipital Lobe</span>
+                            <input type="checkbox" class="R_Occipital_Lobe" checked />
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <h3>
+                <span class="title">Cerebellum</span>
+                <input type="checkbox" class="primary" checked />
+            </h3>
+            <ul id="Cerebellum">
+            	<li>
+            		<span class="title">Cerebellum</span>
+            		<input type="checkbox" class="Cerebellum" checked />
+            	</li>
+            	<li>
+            		<span class="title">Left hemisphere</span>
+            		<input type="checkbox" class="Left_hemisphere" checked />
+            	</li>
+            	<li>
+            		<span class="title">Right hemisphere</span>
+            		<input type="checkbox" class="Right_hemisphere" checked />
+            	</li>
+            	<li>
+            		<span class="title">Vermis</span>
+            		<input type="checkbox" class="Vermis" checked />
+            	</li>
+            </ul>
+
+
+            <h3>
+                <span class="title">Deep Neural Structures</span>
+                <input type="checkbox" class="primary" checked />
+            </h3>
+            <ul id="Deep_Neural_Structures">
+            	<li>
+            		<span class="title">White Matter</span>
+            		<input type="checkbox" class="white_matter" checked />
+            	</li>
+            	<li>
+            		<span class="title">Putamen</span>
+            		<input type="checkbox" class="putamen" checked />
+            	</li>
+            	<li>
+            		<span class="title">Caudate Nucleus</span>
+            		<input type="checkbox" class="Caudate_nucleus" checked />
+            	</li>
+            	<li>
+            		<span class="title">Globus Pallidus</span>
+            		<input type="checkbox" class="globus_pallidus" checked />
+            	</li>
+            	<li>
+            		<span class="title">Thalamus</span>
+            		<input type="checkbox" class="thalamus" checked />
+            	</li>
+            	<li>
+            		<span class="title">Fornix</span>
+            		<input type="checkbox" class="fornix" checked />
+            	</li>
+            	<li>
+            		<span class="title">Hippocampus</span>
+            		<input type="checkbox" class="hippocampus" checked />
+            	</li>
+            	<li>
+            		<span class="title">Hypothalamus</span>
+            		<input type="checkbox" class="hypothalamus" checked />
+            	</li>
+            	<li>
+            		<span class="title">Corpus Callosum</span>
+            		<input type="checkbox" class="corpus_callosum" checked />
+            	</li>            	
+            </ul>
+
+
+            <h3>
+                <span class="title">Ventricular System</span>
+                <input type="checkbox" class="primary" checked />
+            </h3>
+            <ul id="Ventricular_System">
+            	<li class="secondary">
+            		<h3>
+                        <span class="title">Lateral Ventricles</span>
+                        <input type="checkbox" class="primary" checked />
+                    </h3>
+
+                    <ul id="lateral_verticles">
+                        <li>
+                            <span class="title">Frontal Horn</span>
+                            <input type="checkbox" class="lateral_ventricles_FH" checked />
+                        </li>
+                        <li>
+                            <span class="title">Occipital Horn </span>
+                            <input type="checkbox" class="lateral_ventricles_OH" checked />
+                        </li>
+                        <li>
+                            <span class="title">Temporal Horn</span>
+                            <input type="checkbox" class="lateral_ventricles_TH" checked />
+                        </li>
+                        <li>
+                            <span class="title">Lateral Ventricles</span>
+                            <input type="checkbox" class="lateral_ventricles_SE" checked />
+                        </li>
+                    </ul>
+            	</li>
+	            <li>
+	                <span class="title">Third Ventricle</span>
+	                <input type="checkbox" class="third_Ventricle" checked />
+	            </li>
+	            <li>
+	                <span class="title">Fourth Ventricle</span>
+	                <input type="checkbox" class="fourth_Ventricle" checked />
+	            </li>
+            </ul>
+        
+		</div>
+            
+            
+    	<script src="js/script.js"></script>
+	</body>
+</html>
