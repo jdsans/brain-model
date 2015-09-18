@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <head>
 		<title>Brain Model</title>
         
+        <!-- Threejs and object loader -->
 		<script src="../build/three.min.js"></script>
+        <script src="js/loaders/OBJLoader.js"></script>
+
+        <!-- Mouse controls -->
         <script src="../build/TrackBallControls.js"></script>
+
+        <!-- jQuery and jQuery tabs -->
 		<script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.checkable.js"></script> 
-        <script src="js/loaders/OBJLoader.js"></script>
+
+        <!-- Toggle buttons -->
+        <script src="js/jquery.checkable.js"></script>
         
         <link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
-
+        <!-- Display Brain section description on selection of items-->
 		<div id="info_box"></div>
-    
-    	<div id="control_sidebar">
 
+
+        <!-- Control sidebar for the controls -->    
+    	<div id="control_sidebar">
             <h3>
                 <span class="title">Cortex</span>
                 <input type="checkbox" class="primary" checked />
@@ -44,6 +53,14 @@
                         <li>
                             <span class="title">Occipital Lobe</span>
                             <input type="checkbox" class="L_Occipital_Lobe" checked />
+                        </li>
+                        <li>
+                            <span class="title">Broca's Area</span>
+                            <input type="checkbox" class="L_frontal_inferior_triangularis-Brocas" checked />
+                        </li>
+                        <li>
+                            <span class="title">Wernicke's Area</span>
+                            <input type="checkbox" class="L_cingulate_midposterior-Wernickes" checked />
                         </li>
                     </ul>
                 </li>
@@ -80,21 +97,25 @@
                 <input type="checkbox" class="primary" checked />
             </h3>
             <ul id="Cerebellum">
-            	<li>
+            	<!-- <li>
             		<span class="title">Cerebellum</span>
             		<input type="checkbox" class="Cerebellum" checked />
+            	</li> -->
+            	<li>
+            		<span class="title">Left Cerebellum Cortex</span>
+            		<input type="checkbox" class="L-Cerebellum-Cortex" checked />
             	</li>
             	<li>
-            		<span class="title">Left hemisphere</span>
-            		<input type="checkbox" class="Left_hemisphere" checked />
+            		<span class="title">Right Cerebellum Cortex</span>
+            		<input type="checkbox" class="R-Cerebellum-Cortex" checked />
             	</li>
-            	<li>
-            		<span class="title">Right hemisphere</span>
-            		<input type="checkbox" class="Right_hemisphere" checked />
-            	</li>
+                <li>
+                    <span class="title">White Matter</span>
+                    <input type="checkbox" class="Cerebellum-White-Matter" checked />
+                </li>
             	<li>
             		<span class="title">Vermis</span>
-            		<input type="checkbox" class="Vermis" checked />
+            		<input type="checkbox" class="Cerebellum-Vermis" checked />
             	</li>
             </ul>
 
@@ -184,8 +205,7 @@
             </ul>
         
 		</div>
-            
-            
+                
     	<script src="js/script.js"></script>
 	</body>
 </html>

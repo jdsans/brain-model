@@ -1,5 +1,6 @@
 <?php
-$response = serialize($_POST['RotMatrix']);
+$event_data = json_encode($_POST['event_data']);
+$event_type = json_encode($_POST['event_type']);
 
 $file = 'data.txt';
 
@@ -7,7 +8,7 @@ $file = 'data.txt';
 $current = file_get_contents($file);
 
 // Append new response to the file
-$current .= "\r\n ".$response;
+$current .= "\r\n".$event_type."|".$event_data."|".date("Y-m-d g:ia",time());
 
 // Write the contents back to the file
 file_put_contents($file, $current);
