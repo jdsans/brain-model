@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brain Model</title>
+
+    <!-- stylesheet -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Display Brain section description on selection of items-->
+    <div id="info_box"></div>
+    <!-- Control sidebar for the controls -->
+    <div id="control_sidebar">
+        <h3>
+            <span class="title">Cortex</span>
+            <input type="checkbox" class="primary" checked />
+        </h3>
+        <ul id="cortex">
+            <li class="secondary">
+                <h3>
+                    <span class="title">Left Cortex</span>
+                    <input type="checkbox" class="primary" checked />
+                </h3>
+                <ul id="L_Cortex">
+                    <li>
+                        <span class="title">Frontal Lobe</span>
+                        <input type="checkbox" class="L_Frontal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Temporal Lobe</span>
+                        <input type="checkbox" class="L_Temporal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Parietal Lobe</span>
+                        <input type="checkbox" class="L_Parietal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Occipital Lobe</span>
+                        <input type="checkbox" class="L_Occipital_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Broca's Area</span>
+                        <input type="checkbox" class="L_frontal_inferior_triangularis-Brocas" checked />
+                    </li>
+                    <li>
+                        <span class="title">Wernicke's Area</span>
+                        <input type="checkbox" class="L_cingulate_midposterior-Wernickes" checked />
+                    </li>
+                </ul>
+            </li>
+            <li class="secondary">
+                <h3>
+                    <span class="title">Right Cortex</span>
+                    <input type="checkbox" class="primary" checked />
+                </h3>
+                <ul id="R_Cortex">
+                    <li>
+                        <span class="title">Frontal Lobe</span>
+                        <input type="checkbox" class="R_Frontal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Temporal Lobe</span>
+                        <input type="checkbox" class="R_Temporal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Parietal Lobe</span>
+                        <input type="checkbox" class="R_Parietal_Lobe" checked />
+                    </li>
+                    <li>
+                        <span class="title">Occipital Lobe</span>
+                        <input type="checkbox" class="R_Occipital_Lobe" checked />
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>
+            <span class="title">Cerebellum</span>
+            <input type="checkbox" class="primary" checked />
+        </h3>
+        <ul id="Cerebellum">
+            <!-- <li>
+                    <span class="title">Cerebellum</span>
+                    <input type="checkbox" class="Cerebellum" checked />
+                </li> -->
+            <li>
+                <span class="title">Left Cerebellum Cortex</span>
+                <input type="checkbox" class="L-Cerebellum-Cortex" checked />
+            </li>
+            <li>
+                <span class="title">Right Cerebellum Cortex</span>
+                <input type="checkbox" class="R-Cerebellum-Cortex" checked />
+            </li>
+            <li>
+                <span class="title">White Matter</span>
+                <input type="checkbox" class="Cerebellum-White-Matter" checked />
+            </li>
+            <li>
+                <span class="title">Vermis</span>
+                <input type="checkbox" class="Cerebellum-Vermis" checked />
+            </li>
+        </ul>
+        <h3>
+            <span class="title">Deep Neural Structures</span>
+            <input type="checkbox" class="primary" checked />
+        </h3>
+        <ul id="Deep_Neural_Structures">
+            <li>
+                <span class="title">White Matter</span>
+                <input type="checkbox" class="white_matter" checked />
+            </li>
+            <li>
+                <span class="title">Putamen</span>
+                <input type="checkbox" class="putamen" checked />
+            </li>
+            <li>
+                <span class="title">Caudate Nucleus</span>
+                <input type="checkbox" class="Caudate_nucleus" checked />
+            </li>
+            <li>
+                <span class="title">Globus Pallidus</span>
+                <input type="checkbox" class="globus_pallidus" checked />
+            </li>
+            <li>
+                <span class="title">Thalamus</span>
+                <input type="checkbox" class="thalamus" checked />
+            </li>
+            <li>
+                <span class="title">Fornix</span>
+                <input type="checkbox" class="fornix" checked />
+            </li>
+            <li>
+                <span class="title">Hippocampus</span>
+                <input type="checkbox" class="hippocampus" checked />
+            </li>
+            <li>
+                <span class="title">Hypothalamus</span>
+                <input type="checkbox" class="hypothalamus" checked />
+            </li>
+            <li>
+                <span class="title">Corpus Callosum</span>
+                <input type="checkbox" class="corpus_callosum" checked />
+            </li>
+        </ul>
+        <h3>
+            <span class="title">Ventricular System</span>
+            <input type="checkbox" class="primary" checked />
+        </h3>
+        <ul id="Ventricular_System">
+            <li class="secondary">
+                <h3>
+                    <span class="title">Lateral Ventricles</span>
+                    <input type="checkbox" class="primary" checked />
+                </h3>
+                <ul id="lateral_verticles">
+                    <li>
+                        <span class="title">Frontal Horn</span>
+                        <input type="checkbox" class="lateral_ventricles_FH" checked />
+                    </li>
+                    <li>
+                        <span class="title">Occipital Horn </span>
+                        <input type="checkbox" class="lateral_ventricles_OH" checked />
+                    </li>
+                    <li>
+                        <span class="title">Temporal Horn</span>
+                        <input type="checkbox" class="lateral_ventricles_TH" checked />
+                    </li>
+                    <li>
+                        <span class="title">Lateral Ventricles</span>
+                        <input type="checkbox" class="lateral_ventricles_SE" checked />
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="title">Third Ventricle</span>
+                <input type="checkbox" class="third_Ventricle" checked />
+            </li>
+            <li>
+                <span class="title">Fourth Ventricle</span>
+                <input type="checkbox" class="fourth_Ventricle" checked />
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Threejs and object loader -->
+    <script src="js/vendors/three.min.js"></script>
+    <script src="js/vendors/threejs-plugins/OBJLoader.js"></script>
+    <!-- Mouse controls -->
+    <script src="js/vendors/threejs-plugins/TrackBallControls.js"></script>
+    <!-- jQuery and jQuery tabs -->
+    <script src="js/vendors/jquery-1.11.1.min.js"></script>
+    <script src="js/vendors/jquery-ui.min.js"></script>
+    <!-- Toggle buttons -->
+    <script src="js/vendors/jquery.checkable.js"></script>
+    <!-- Main js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

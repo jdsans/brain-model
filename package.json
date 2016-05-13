@@ -1,0 +1,16 @@
+{
+  "name": "brain-model",
+  "version": "1.0.0",
+  "description": "3d brain model for learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdsans/brain-model.git"
+  },
+  "author": "jdsans",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jsing72/brian-simulation#readme",
+}
